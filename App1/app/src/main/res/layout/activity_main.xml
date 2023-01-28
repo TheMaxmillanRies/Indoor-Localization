@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/cellA"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#B6B6B6"
+            android:text="Cell A"
+            android:textAlignment="center"
+            tools:text="Cell A" />
+
+        <TextView
+            android:id="@+id/cellB"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#B6B6B6"
+            android:text="Cell B"
+            android:textAlignment="center"
+            tools:text="Cell B" />
+
+        <TextView
+            android:id="@+id/cellC"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#B6B6B6"
+            android:text="Cell C"
+            android:textAlignment="center"
+            tools:text="Cell C" />
+
+        <TextView
+            android:id="@+id/cellD"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#B6B6B6"
+            android:text="Cell D"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="start"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:id="@+id/activityView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Activity: Unknown"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/startButton"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="enterTraining"
+        android:text="Train"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
